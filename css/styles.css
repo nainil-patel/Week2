@@ -1,1 +1,65 @@
-
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the entire page background to black */
+  html, body {
+    background-color: black;
+    overflow-x: hidden;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  /* Fixed element that will animate on scroll */
+  #rewatchText {
+    position: fixed;
+    top: 50%;
+    left: 50%; /* Start centered in the viewport */
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: white;
+    pointer-events: none;
+    transition: left 0.1s linear;
+    z-index: 10;
+  }
+  
+  /* Hero section: full-screen background */
+  .hero {
+    height: 100vh;
+    background-color: black;
+  }
+  
+  /* Split-screen section: occupies at least full viewport height */
+  .split {
+    display: flex;
+    min-height: 100vh; /* Ensures the section expands if content overflows */
+  }
+  
+  /* Left side */
+  .left {
+    width: 50%;
+    background-color: black;
+  }
+  
+  /* Right side */
+  .right {
+    width: 50%;
+    background-color: #111; /* A slight contrast from black */
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Narrative content styles */
+  .right h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+  }
+  
+  .right p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
